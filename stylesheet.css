@@ -86,7 +86,6 @@ html {
 .grid-container {
   display: grid;
   margin: 2rem;
-
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -105,6 +104,12 @@ html {
   text-align: center;
 }
 
+.grid-item-4{
+  grid-row: 3;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 765px) {
   .grid-item-1{
     grid-column: span 3;
@@ -117,6 +122,10 @@ html {
   
   .grid-item-3{
     grid-column: span 3;
+  }
+  .grid-item-4{
+    grid-column: span 3;
+    text-align: center;
   }
 }
 
