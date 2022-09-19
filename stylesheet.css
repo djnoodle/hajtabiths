@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+
+* {
+  font-family: Quicksand;
+  box-sizing: border-box;
+
+  --Mörkblå: #4978fa;
+  --Ljusblå: #91adce;
+  --Grå: #5e5e5e;
+  --Svart: #000000;
+  --Vit: #ffffff;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--Vit);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 10vh;
+  width: 100%;
+  align-items: center;
+  background-color: var(--Grå);
+}
+
+@media (min-width: 800px){
+  .navbar{
+    flex-direction: row;
+  }
+}
+
+.navbar-links ul {
+  display: flex;
+  padding: 0;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navbar-links li {
+  
+}
+
+.navbar-links li a {
+  color: var(--Svart);
+  padding: 2rem;
+}
+
+.hero-image {
+  display: grid;
+  height: 70vh;
+  margin-top: 20vh;
+  margin-left: 10vw;
+}
+
+.hero-text {
+  display: grid;
+  text-align: center;
+  color: var(--Svart);
+}
+
+#usp-text {
+  font-size: 1.5rem;
+}
+
+/*Validerad ovanför 15/9-22*/
