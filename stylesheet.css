@@ -75,6 +75,7 @@ html {
   max-width: 1000px;
   height: auto;
 }
+/*Validerad ovanför 15/9-22*/
 
 .grid-container {
   display: grid;
@@ -121,8 +122,8 @@ html {
   }
 }
 
-footer {
+#foot {
   text-align: center;
 }
 
-/*Validerad ovanför 15/9-22*/
+/*Validerad ovan 20/9-22*/
