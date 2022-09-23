@@ -72,7 +72,7 @@ html {
 /*Gör så att bilden är responsive i alla lägen*/
 .responsive {
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   height: auto;
 }
 /*Validerad ovanför 15/9-22*/
@@ -82,6 +82,7 @@ html {
   margin: 2rem;
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 0.5fr);
 }
 
 .grid-item-1 {
@@ -89,17 +90,24 @@ html {
 }
 
 .grid-item-2 {
-  grid-column: span 2;
-  text-align: center;
+  border: solid red;
+  grid-column: span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-item-3 {
-  grid-column: span 2;
-  text-align: center;
+  border: solid #000000;
+  grid-column-start: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-item-4 {
-  grid-row: 3;
+  grid-column-start: 1;
   text-align: center;
 }
 
